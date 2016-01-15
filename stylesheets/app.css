@@ -116,7 +116,7 @@ div, footer {
   align-items: center;
   justify-content: center;
   background-color: #EDF2F4;
-  border: 5px solid #DA100B;
+  border: 5px solid #EF233C;
   padding: 4px;
   margin-bottom: 50px;
 }
@@ -154,6 +154,11 @@ h2 {
 }
 
 /* line 105, ../sass/app.scss */
+section.body {
+  text-align: center;
+}
+
+/* line 109, ../sass/app.scss */
 p, a {
   color: #2B2D42;
   font-family: helvetica, roboto, arial, sans-serif;
@@ -162,8 +167,13 @@ p, a {
   margin-bottom: 1em;
 }
 
-/* line 113, ../sass/app.scss */
+/* line 117, ../sass/app.scss */
+a {
+  color: #D90429;
+}
+
+/* line 121, ../sass/app.scss */
 a:hover {
-  color: #DA100B;
+  color: #EF233C;
   text-decoration: underline;
 }
