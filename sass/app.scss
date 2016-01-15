@@ -3,8 +3,14 @@
 
 
 /* variables and mixins */
+// https://coolors.co/app/2b2d42-8d99ae-edf2f4-ef233c-d90429
+$color-navy: #2B2D42;
+$color-medium-grey: #8D99AE;
 $color-steel-grey: #EDF2F4;
-$color-red: #D90429;
+$color-red: #DA100B;
+$color-dark-red: #D8340B;
+$font-family-headings: "Josefin Sans", helvetica, roboto, arial, sans-serif;
+$font-family-body: helvetica, roboto, arial, sans-serif;
 
 $small-screen: 500px;
 $medium-screen: 900px;
@@ -13,6 +19,12 @@ $medium-screen: 900px;
   border-radius: 100000px; //gigantic, will always be round
   height: $diameter;
   width: $diameter;
+}
+
+@mixin center-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* layout */
@@ -41,7 +53,6 @@ div, footer { //get the other symantic block elements
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   @media screen and (max-width: $small-screen - 1px) {
     width: 80%;
   }
@@ -52,14 +63,15 @@ $headshot-size: 150px;
   @include circle($headshot-size);
 }
 
-$headshot-wrapper-width: 8px;
+$headshot-border-width: 5px;
+$headshot-inner-border-width: 4px;
 .headshot__wrapper {
-  @include circle($headshot-size + $headshot-wrapper-width);
-  background-color: $color-red;
+  @include circle(auto);
+  @include center-child;
+  background-color: $color-steel-grey;
+  border: $headshot-border-width solid $color-red;
+  padding: $headshot-inner-border-width;
   margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* typography */
@@ -69,11 +81,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2B2D42;
-  font-family: "Josefin Sans";
+  color: $color-navy;
+  font-family: $font-family-headings;
   font-weight: 300;
-  line-height: 1.2em;
   text-transform: uppercase;
+  margin-bottom: 1.5em;
 }
 
 h1 {
@@ -82,6 +94,7 @@ h1 {
 
 h1.name {
   letter-spacing: 20px;
+  margin-bottom: .6em;
 }
 
 h2 {
@@ -90,10 +103,11 @@ h2 {
 }
 
 p, a {
-  text-decoration: none;
-  font-family: Helvetica, Roboto, Arial, sans-serif;
+  color: $color-navy;
+  font-family: $font-family-body;
   font-weight: 300;
-  font-size: 11px;
+  font-size: 16px;
+  margin-bottom: 1em;
 }
 
 a:hover {

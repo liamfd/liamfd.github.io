@@ -62,66 +62,67 @@ table {
 
 /* variables and mixins */
 /* layout */
-/* line 19, ../sass/app.scss */
+/* line 31, ../sass/app.scss */
 html {
   background: #EDF2F4;
   height: 100%;
   width: 100%;
 }
 
-/* line 25, ../sass/app.scss */
+/* line 37, ../sass/app.scss */
 body {
   height: 100%;
   color: white;
 }
 
-/* line 30, ../sass/app.scss */
+/* line 42, ../sass/app.scss */
 div, footer {
   box-sizing: border-box;
 }
 
-/* line 34, ../sass/app.scss */
+/* line 46, ../sass/app.scss */
 .content__container {
   height: 100%;
   padding: 130px 5% 0;
   width: 100%;
 }
 
-/* line 40, ../sass/app.scss */
+/* line 52, ../sass/app.scss */
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 @media screen and (max-width: 499px) {
-  /* line 40, ../sass/app.scss */
+  /* line 52, ../sass/app.scss */
   .content {
     width: 80%;
   }
 }
 
-/* line 51, ../sass/app.scss */
+/* line 62, ../sass/app.scss */
 .headshot {
   border-radius: 100000px;
   height: 150px;
   width: 150px;
 }
 
-/* line 56, ../sass/app.scss */
+/* line 68, ../sass/app.scss */
 .headshot__wrapper {
   border-radius: 100000px;
-  height: 158px;
-  width: 158px;
-  background-color: #D90429;
-  margin-bottom: 50px;
+  height: auto;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #EDF2F4;
+  border: 5px solid #DA100B;
+  padding: 4px;
+  margin-bottom: 50px;
 }
 
 /* typography */
-/* line 66, ../sass/app.scss */
+/* line 78, ../sass/app.scss */
 h1,
 h2,
 h3,
@@ -129,38 +130,40 @@ h4,
 h5,
 h6 {
   color: #2B2D42;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", helvetica, roboto, arial, sans-serif;
   font-weight: 300;
-  line-height: 1.2em;
   text-transform: uppercase;
+  margin-bottom: 1.5em;
 }
 
-/* line 79, ../sass/app.scss */
+/* line 91, ../sass/app.scss */
 h1 {
   font-size: 42px;
 }
 
-/* line 83, ../sass/app.scss */
+/* line 95, ../sass/app.scss */
 h1.name {
   letter-spacing: 20px;
+  margin-bottom: .6em;
 }
 
-/* line 87, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 h2 {
   font-size: 16px;
   letter-spacing: 2.5px;
 }
 
-/* line 92, ../sass/app.scss */
+/* line 105, ../sass/app.scss */
 p, a {
-  text-decoration: none;
-  font-family: Helvetica, Roboto, Arial, sans-serif;
+  color: #2B2D42;
+  font-family: helvetica, roboto, arial, sans-serif;
   font-weight: 300;
-  font-size: 11px;
+  font-size: 16px;
+  margin-bottom: 1em;
 }
 
-/* line 99, ../sass/app.scss */
+/* line 113, ../sass/app.scss */
 a:hover {
-  color: #D90429;
+  color: #DA100B;
   text-decoration: underline;
 }
