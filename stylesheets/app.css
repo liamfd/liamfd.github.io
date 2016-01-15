@@ -100,14 +100,14 @@ div, footer {
   }
 }
 
-/* line 62, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 .headshot {
   border-radius: 100000px;
   height: 150px;
   width: 150px;
 }
 
-/* line 68, ../sass/app.scss */
+/* line 69, ../sass/app.scss */
 .headshot__wrapper {
   border-radius: 100000px;
   height: auto;
@@ -122,7 +122,7 @@ div, footer {
 }
 
 /* typography */
-/* line 78, ../sass/app.scss */
+/* line 79, ../sass/app.scss */
 h1,
 h2,
 h3,
@@ -136,43 +136,45 @@ h6 {
   margin-bottom: 1.5em;
 }
 
-/* line 91, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 h1 {
   font-size: 42px;
 }
 
-/* line 95, ../sass/app.scss */
+/* line 96, ../sass/app.scss */
 h1.name {
   letter-spacing: 20px;
   margin-bottom: .6em;
 }
 
-/* line 100, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 h2 {
   font-size: 16px;
   letter-spacing: 2.5px;
 }
 
-/* line 105, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 section.body {
   text-align: center;
 }
 
-/* line 109, ../sass/app.scss */
+/* line 110, ../sass/app.scss */
 p, a {
   color: #2B2D42;
   font-family: helvetica, roboto, arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   margin-bottom: 1em;
+  max-width: 500px;
 }
 
-/* line 117, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
 a {
   color: #D90429;
+  text-decoration: none;
 }
 
-/* line 121, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 a:hover {
   color: #EF233C;
   text-decoration: underline;

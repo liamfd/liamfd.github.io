@@ -53,6 +53,7 @@ div, footer { //get the other symantic block elements
   display: flex;
   flex-direction: column;
   align-items: center;
+  // TODO: figure out the width/padding here, should probably just have padding so no media query
   @media screen and (max-width: $small-screen - 1px) {
     width: 80%;
   }
@@ -112,10 +113,12 @@ p, a {
   font-weight: 300;
   font-size: 16px;
   margin-bottom: 1em;
+  max-width: 500px;
 }
 
 a {
   color: $color-dark-red;
+  text-decoration: none;
 }
 
 a:hover {
