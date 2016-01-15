@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: white;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 38, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 46, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* variables and mixins */
+/* layout */
+/* line 19, ../sass/app.scss */
+html {
+  background: #EDF2F4;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 25, ../sass/app.scss */
+body {
+  height: 100%;
+  color: white;
+}
+
+/* line 30, ../sass/app.scss */
+div, footer {
+  box-sizing: border-box;
+}
+
+/* line 34, ../sass/app.scss */
+.content__container {
+  height: 100%;
+  padding: 130px 5% 0;
+  width: 100%;
+}
+
+/* line 40, ../sass/app.scss */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 499px) {
+  /* line 40, ../sass/app.scss */
+  .content {
+    width: 80%;
+  }
+}
+
+/* line 51, ../sass/app.scss */
+.headshot {
+  border-radius: 100000px;
+  height: 150px;
+  width: 150px;
+}
+
+/* line 56, ../sass/app.scss */
+.headshot__wrapper {
+  border-radius: 100000px;
+  height: 158px;
+  width: 158px;
+  background-color: #D90429;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* typography */
+/* line 66, ../sass/app.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2B2D42;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+/* line 79, ../sass/app.scss */
+h1 {
+  font-size: 42px;
+}
+
+/* line 83, ../sass/app.scss */
+h1.name {
+  letter-spacing: 20px;
+}
+
+/* line 87, ../sass/app.scss */
+h2 {
+  font-size: 16px;
+  letter-spacing: 2.5px;
+}
+
+/* line 92, ../sass/app.scss */
+p, a {
+  text-decoration: none;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+/* line 99, ../sass/app.scss */
+a:hover {
+  color: #D90429;
+  text-decoration: underline;
+}

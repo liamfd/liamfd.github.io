@@ -1,0 +1,104 @@
+@import './reset';
+// @import './flex_grid';
+
+
+/* variables and mixins */
+$color-steel-grey: #EDF2F4;
+$color-red: #D90429;
+
+$small-screen: 500px;
+$medium-screen: 900px;
+
+@mixin circle($diameter) {
+  border-radius: 100000px; //gigantic, will always be round
+  height: $diameter;
+  width: $diameter;
+}
+
+/* layout */
+html {
+  background: $color-steel-grey;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  color: white;
+}
+
+div, footer { //get the other symantic block elements
+  box-sizing: border-box;
+}
+
+.content__container {
+  height: 100%;
+  padding: 130px 5% 0;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @media screen and (max-width: $small-screen - 1px) {
+    width: 80%;
+  }
+}
+
+$headshot-size: 150px;
+.headshot {
+  @include circle($headshot-size);
+}
+
+$headshot-wrapper-width: 8px;
+.headshot__wrapper {
+  @include circle($headshot-size + $headshot-wrapper-width);
+  background-color: $color-red;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2B2D42;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h1.name {
+  letter-spacing: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 2.5px;
+}
+
+p, a {
+  text-decoration: none;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+a:hover {
+  color: $color-red;
+  text-decoration: underline;
+}
+
+
