@@ -145,36 +145,38 @@ h1 {
 h1.name {
   letter-spacing: 20px;
   margin-bottom: .6em;
+  text-align: center;
 }
 
-/* line 101, ../sass/app.scss */
+/* line 102, ../sass/app.scss */
 h2 {
   font-size: 16px;
   letter-spacing: 2.5px;
 }
 
-/* line 106, ../sass/app.scss */
+/* line 107, ../sass/app.scss */
 section.body {
   text-align: center;
 }
 
-/* line 110, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 p, a {
   color: #2B2D42;
-  font-family: helvetica, roboto, arial, sans-serif;
+  font-family: "Slabo 27px", helvetica, roboto, arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
+  line-height: 1.4em;
   margin-bottom: 1em;
-  max-width: 500px;
+  max-width: 600px;
 }
 
-/* line 119, ../sass/app.scss */
+/* line 121, ../sass/app.scss */
 a {
   color: #D90429;
   text-decoration: none;
 }
 
-/* line 124, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 a:hover {
   color: #EF233C;
   text-decoration: underline;

@@ -10,7 +10,7 @@ $color-steel-grey: #EDF2F4;
 $color-red: #EF233C; // #DA100B;
 $color-dark-red: #D90429; //#D8340B;
 $font-family-headings: "Josefin Sans", helvetica, roboto, arial, sans-serif;
-$font-family-body: helvetica, roboto, arial, sans-serif;
+$font-family-body: 'Slabo 27px', helvetica, roboto, arial, sans-serif;
 
 $small-screen: 500px;
 $medium-screen: 900px;
@@ -96,6 +96,7 @@ h1 {
 h1.name {
   letter-spacing: 20px;
   margin-bottom: .6em;
+  text-align: center;
 }
 
 h2 {
@@ -112,8 +113,9 @@ p, a {
   font-family: $font-family-body;
   font-weight: 300;
   font-size: 16px;
+  line-height: 1.4em;
   margin-bottom: 1em;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 a {
