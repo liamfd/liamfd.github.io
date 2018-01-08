@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,92 +21,60 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  color: white;
-}
+  color: white; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 28, ../sass/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
-/* line 32, ../sass/_reset.scss */
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 35, ../sass/_reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 38, ../sass/_reset.scss */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
-/* line 41, ../sass/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
-/* line 46, ../sass/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* variables and mixins */
 /* layout */
-/* line 31, ../sass/app.scss */
 html {
-  background: #EDF2F4;
+  background: #edf2f4;
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
-/* line 37, ../sass/app.scss */
 body {
-  height: 100%;
+  align-items: center;
   color: white;
-}
-
-/* line 42, ../sass/app.scss */
-div, footer {
-  box-sizing: border-box;
-}
-
-/* line 46, ../sass/app.scss */
-.content__container {
+  display: flex;
   height: 100%;
-  padding: 130px 5% 0;
-  width: 100%;
-}
+  justify-content: center; }
 
-/* line 52, ../sass/app.scss */
+.content__container {
+  padding: 16px;
+  padding-bottom: 120px; }
+
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media screen and (max-width: 499px) {
-  /* line 52, ../sass/app.scss */
-  .content {
-    width: 80%;
-  }
-}
+  max-width: 600px; }
 
-/* line 63, ../sass/app.scss */
 .headshot {
   border-radius: 100000px;
   height: 150px;
-  width: 150px;
-}
+  width: 150px; }
 
-/* line 69, ../sass/app.scss */
 .headshot__wrapper {
   border-radius: 100000px;
   height: auto;
@@ -115,69 +82,50 @@ div, footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EDF2F4;
-  border: 5px solid #EF233C;
+  background-color: #edf2f4;
+  border: 5px solid #F03A24;
   padding: 4px;
-  margin-bottom: 50px;
-}
+  margin-bottom: 32px; }
 
 /* typography */
-/* line 79, ../sass/app.scss */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #2B2D42;
-  font-family: "Josefin Sans", helvetica, roboto, arial, sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 1.5em;
-}
+  color: #260603;
+  font-family: "Reem Kufi", "Helvetica", sans-serif;
+  font-weight: 300; }
 
-/* line 92, ../sass/app.scss */
 h1 {
   font-size: 42px;
-}
+  letter-spacing: 0.25em;
+  text-transform: uppercase; }
 
-/* line 96, ../sass/app.scss */
 h1.name {
-  letter-spacing: 20px;
-  margin-bottom: .6em;
-  text-align: center;
-}
+  margin-bottom: 32px;
+  text-align: center; }
 
-/* line 102, ../sass/app.scss */
-h2 {
-  font-size: 16px;
-  letter-spacing: 2.5px;
-}
-
-/* line 107, ../sass/app.scss */
 section.body {
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 111, ../sass/app.scss */
 p, a {
-  color: #2B2D42;
-  font-family: "Slabo 27px", helvetica, roboto, arial, sans-serif;
+  color: #260603;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 1.4em;
-  margin-bottom: 1em;
-  max-width: 600px;
-}
+  font-size: 18px;
+  line-height: 1.3em;
+  max-width: 600px; }
 
-/* line 121, ../sass/app.scss */
 a {
-  color: #D90429;
-  text-decoration: none;
-}
+  color: #f03a24;
+  text-decoration: none; }
+  a:hover {
+    color: #F03A24;
+    text-decoration: underline; }
 
-/* line 126, ../sass/app.scss */
-a:hover {
-  color: #EF233C;
-  text-decoration: underline;
-}
+p.bio {
+  margin-bottom: 16px; }
+
+/*# sourceMappingURL=app.css.map */

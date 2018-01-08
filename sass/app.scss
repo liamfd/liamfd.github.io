@@ -1,17 +1,13 @@
 @import './reset';
-// @import './flex_grid';
-
 
 /* variables and mixins */
-// https://coolors.co/app/2b2d42-8d99ae-edf2f4-ef233c-d90429
-$color-navy: #2B2D42;
-$color-medium-grey: #8D99AE;
-$color-steel-grey: #EDF2F4;
-$color-red: #EF233C; // #DA100B;
-$color-dark-red: #D90429; //#D8340B;
-$font-family-headings: "Josefin Sans", helvetica, roboto, arial, sans-serif;
-$font-family-body: 'Slabo 27px', helvetica, roboto, arial, sans-serif;
+$color-black: #260603;
+$color-medium-grey: #edf2f4;
+$color-red: #F03A24;
+$font-family-headings: 'Reem Kufi', 'Helvetica', sans-serif;
+$font-family-body: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
+$spacing-base: 8px;
 $small-screen: 500px;
 $medium-screen: 900px;
 
@@ -29,37 +25,32 @@ $medium-screen: 900px;
 
 /* layout */
 html {
-  background: $color-steel-grey;
+  background: $color-medium-grey;
   height: 100%;
   width: 100%;
 }
 
 body {
-  height: 100%;
+  align-items: center;
   color: white;
-}
-
-div, footer { //get the other symantic block elements
-  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 
 .content__container {
-  height: 100%;
-  padding: 130px 5% 0;
-  width: 100%;
+  padding: $spacing-base * 2;
+  padding-bottom: $spacing-base * 15; // uncenter in the page
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // TODO: figure out the width/padding here, should probably just have padding so no media query
-  @media screen and (max-width: $small-screen - 1px) {
-    width: 80%;
-  }
+  max-width: 600px;
 }
 
-$headshot-size: 150px;
+$headshot-size: 150px; // TODO: 160px;
 .headshot {
   @include circle($headshot-size);
 }
@@ -69,10 +60,10 @@ $headshot-inner-border-width: 4px;
 .headshot__wrapper {
   @include circle(auto);
   @include center-child;
-  background-color: $color-steel-grey;
+  background-color: $color-medium-grey;
   border: $headshot-border-width solid $color-red;
   padding: $headshot-inner-border-width;
-  margin-bottom: 50px;
+  margin-bottom: $spacing-base * 4;
 }
 
 /* typography */
@@ -82,26 +73,20 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-navy;
+  color: $color-black;
   font-family: $font-family-headings;
   font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 1.5em;
 }
 
 h1 {
   font-size: 42px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
 }
 
 h1.name {
-  letter-spacing: 20px;
-  margin-bottom: .6em;
+  margin-bottom: $spacing-base * 4;
   text-align: center;
-}
-
-h2 {
-  font-size: 16px;
-  letter-spacing: 2.5px;
 }
 
 section.body {
@@ -109,23 +94,24 @@ section.body {
 }
 
 p, a {
-  color: $color-navy;
+  color: $color-black;
   font-family: $font-family-body;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 1.4em;
-  margin-bottom: 1em;
+  font-size: 18px;
+  line-height: 1.3em;
   max-width: 600px;
 }
 
 a {
-  color: $color-dark-red;
+  color: darken($color-red, 0.10);
   text-decoration: none;
+
+  &:hover {
+    color: $color-red;
+    text-decoration: underline;
+  }
 }
 
-a:hover {
-  color: $color-red;
-  text-decoration: underline;
+p.bio {
+  margin-bottom: $spacing-base * 2;
 }
-
-
