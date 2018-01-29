@@ -1,5 +1,5 @@
 # liamfd.com
-Second Generation Personal Site for me
+Second Generation Personal Site
 
 ### Sass
 ```

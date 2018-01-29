@@ -68,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px; }
+  max-width: 640px; }
 
 .headshot {
   border-radius: 100000px;
@@ -115,8 +115,7 @@ p, a {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 1.3em;
-  max-width: 600px; }
+  line-height: 1.3em; }
 
 a {
   color: #f03a24;

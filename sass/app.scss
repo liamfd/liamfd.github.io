@@ -47,7 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
+  max-width: 640px;
 }
 
 $headshot-size: 150px; // TODO: 160px;
@@ -99,7 +99,6 @@ p, a {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.3em;
-  max-width: 600px;
 }
 
 a {
