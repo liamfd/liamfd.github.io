@@ -57,7 +57,7 @@ body {
   align-items: center;
   color: white;
   display: flex;
-  height: 100%;
+  min-height: 100%;
   justify-content: center; }
 
 .content__container {
@@ -83,7 +83,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #edf2f4;
-  border: 5px solid #F03A24;
+  border: 5px solid #f03a24;
   padding: 4px;
   margin-bottom: 32px; }
 
@@ -121,10 +121,8 @@ a {
   color: #f03a24;
   text-decoration: none; }
   a:hover {
-    color: #F03A24;
+    color: #f03a24;
     text-decoration: underline; }
 
 p.bio {
   margin-bottom: 16px; }
-
-/*# sourceMappingURL=app.css.map */
